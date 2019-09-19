@@ -13,27 +13,27 @@ s\transactionManagement-1.0-SNAPSHOT.jar server $PROJECT-DIR$\transactionManagem
 -REGISTER USER
 
 POST : 'http://localhost:8080/transaction/customer/register'
-...
+```
 {
 "firstName" :"TEST" ,
 "lastName" :"API",
 "phoneNumber" : 123456789,
 "amount" : 100
 }
-...
+```
 
 -ACCOUNT TRANSFER
 
 POST : 'http://localhost:8080/transaction/customer/accountTransfer'
 
 INPUT : 
-...
+```
 {
     "toAccountNo": "TESTAC1",
     "amount": 5,
     "fromAccountNo": "TESTAC2"
 }
-...
+```
 
 
 -ROLL BACK LAST TRANSACTION
