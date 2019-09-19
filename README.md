@@ -10,7 +10,7 @@ s\transactionManagement-1.0-SNAPSHOT.jar server $PROJECT-DIR$\transactionManagem
 '
 ## API FOR TRANSACTIONS
 
--REGISTER USER
+- REGISTER USER
 
 POST : 'http://localhost:8080/transaction/customer/register'
 ```
@@ -21,8 +21,14 @@ POST : 'http://localhost:8080/transaction/customer/register'
 "amount" : 100
 }
 ```
+- ACCOUNT DETAILS 
 
--ACCOUNT TRANSFER
+GET : 'http://localhost:8080/transaction/customer/details?accountNumber=$ACCOUNT-NUMBER'
+
+Eg : http://localhost:8080/transaction/customer/details?accountNumber=TESTAC4
+
+
+- ACCOUNT TRANSFER
 
 POST : 'http://localhost:8080/transaction/customer/accountTransfer'
 
@@ -36,13 +42,11 @@ INPUT :
 ```
 
 
--ROLL BACK LAST TRANSACTION
+- ROLL BACK LAST TRANSACTION
 
 GET : 'http://localhost:8080/transaction/customer/rollBack'
 
-- ACCOUNT DETAILS 
 
-GET 'http://localhost:8080/transaction/customer/details?accountNumber=$ACCOUNT-NUMBER'
 
-Eg : http://localhost:8080/transaction/customer/details?accountNumber=TESTAC4
+
 
