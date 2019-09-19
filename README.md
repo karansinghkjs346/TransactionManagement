@@ -14,14 +14,14 @@ s\transactionManagement-1.0-SNAPSHOT.jar server $PROJECT-DIR$\transactionManagem
 
             POST : 'http://localhost:8080/transaction/customer/register'
             
-            ```
+           
             {
             "firstName" :"TEST" ,
             "lastName" :"API",
             "phoneNumber" : 123456789,
             "amount" : 100
             }
-            ```
+            
 - ACCOUNT DETAILS 
 
             GET : 'http://localhost:8080/transaction/customer/details?accountNumber=$ACCOUNT-NUMBER'
@@ -33,13 +33,12 @@ s\transactionManagement-1.0-SNAPSHOT.jar server $PROJECT-DIR$\transactionManagem
 
             POST : 'http://localhost:8080/transaction/customer/accountTransfer'
 
-            ```
             {
                 "toAccountNo": "TESTAC1",
                 "amount": 5,
                 "fromAccountNo": "TESTAC2"
             }
-            ```
+            
 
 
 - ROLL BACK LAST TRANSACTION
