@@ -44,6 +44,17 @@ s\transactionManagement-1.0-SNAPSHOT.jar server $PROJECT-DIR$\transactionManagem
 - ROLL BACK LAST TRANSACTION
 
             GET : 'http://localhost:8080/transaction/customer/rollBack'
+            
+            
+- SELF DEPOSIT CASH/CHECK
+
+            GET : 'http://localhost:8080/transaction/customer/selfDeposit?accountNumber=TestAC2&amount=10'
+            
+            
+- SELF WITHDRAW CASH/CHECK
+
+            GET : 'http://localhost:8080/transaction/customer/selfWithdraw?accountNumber=TestAC2&amount=10'
+                        
 
 
 
