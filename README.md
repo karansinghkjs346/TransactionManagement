@@ -12,7 +12,8 @@ s\transactionManagement-1.0-SNAPSHOT.jar server $PROJECT-DIR$\transactionManagem
 
 - REGISTER USER
 
-POST : 'http://localhost:8080/transaction/customer/register'
+            POST : 'http://localhost:8080/transaction/customer/register'
+            
             ```
             {
             "firstName" :"TEST" ,
@@ -32,7 +33,6 @@ POST : 'http://localhost:8080/transaction/customer/register'
 
             POST : 'http://localhost:8080/transaction/customer/accountTransfer'
 
-            INPUT : 
             ```
             {
                 "toAccountNo": "TESTAC1",
